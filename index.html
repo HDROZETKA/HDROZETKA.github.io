@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Головна сторінка</title>
+	<!-- CSS Import -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/slideshow.css">
+	<link rel="stylesheet" href="assets/css/topnav.css">
+	<link rel="stylesheet" href="assets/css/printers.css">
+	<link rel="stylesheet" href="assets/css/form_news.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="header" style="border-bottom: 1px solid #686868;">
+			
+			<div class="topnav">
+
+				<!-- Centered link -->
+			    <div class="topnav-centered">
+					<a href="#"><img src="assets/img/logo.png"></a>
+				</div>
+
+				<!-- Left-aligned links (default) -->
+				<a href="printers.html">3D ПРИНТЕРИ</a>
+				<a href="acces.html">АКСЕСУАРИ</a>
+
+				<!-- Right-aligned links -->
+				<div class="topnav-right">
+					<a href="auth.html">Вхід / Реєстрація</a>
+					<a href="cart.html">Кошик</a>
+				</div>
+				
+			</div>
+
+		</div>
+
+		<div class="site_content">
+		
+			<div class="slideshow">
+				<!-- Slideshow container -->
+				<div class="slideshow-container">
+
+				  <!-- Full-width images -->
+				  <div class="mySlides fade">
+					<img src="assets/img/slideshow-main/img1.jpg" style="width:100%">
+				  </div>
+
+				  <div class="mySlides fade">
+					<img src="assets/img/slideshow-main/img2.jpg" style="width:100%">
+				  </div>
+
+				  <div class="mySlides fade">
+					<img src="assets/img/slideshow-main/img3.jpg" style="width:100%">
+				  </div>
+
+				  <!-- Next and previous buttons -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+				
+				<!-- Script JS -->
+				<script type="text/javascript" src="assets/js/slideshow.js"></script>
+				
+			</div>
+			
+			<div class="block_1" style="background-color:#619DA1; max-width: 50%; margin-left: auto; margin-right: auto; margin-bottom: 3%;">
+			
+				<h2 style="text-align: center; padding-top: 10px;">Суперціни!</h2>
+				<br>
+				<h5 style="text-align: center; padding-bottom: 10px;">Знижка до 80% на всі товари!</h5>
+
+			</div>
+			
+			<h2 class="grey_text" style="text-align: center; margin-bottom: 30px;">РЕКОМЕНДОВАНІ ТОВАРИ</h2>
+			
+			<div class="block_2">
+				<div class="product-item">
+					<img src="assets/img/printers/1.png">
+					<div class="product">
+						<h3>3D-принтер ZENIT 3D HT</h3>
+						<span class="price">₴ 35500</span>
+						<a href="cart.html" class="button">В корзину</a>
+					</div>
+				</div>
+				<div class="product-item">
+					<img src="assets/img/printers/2.png">
+					<div class="product">
+						<h3>3D-принтер ANYCUBIC i3 Mega S</h3>
+						<span class="price">₴ 6999</span>
+						<a href="cart.html" class="button">В корзину</a>
+					</div>
+				</div>
+			</div>
+			
+			<h2 class="grey_text" style="text-align: center; margin-top: 75px;">ПРИЄДНУЙСЯ</h2>
+			<h4 class="grey_text" style="text-align: center; margin: 20px auto 25px auto;">З нами будеш знати про всі 3D-новинки</h4>
+			
+			<form action="#">
+				<div class="container">
+					<input name="fname" type="text" placeholder="Ім'я" required>
+					<input name="email" type="text" placeholder="Email" required>
+					<button type="submit">Підписатися</button>
+				</div>
+			</form> 
+			
+		</div>
+	
+	</div>
+
+
+
+	<footer class="footer">
+		<img src="assets/img/logo.png">
+		<p>
+			<a href="printers.html">3D Принтери</a> |
+			<a href="acces.html">Аксесуари</a> | 
+			<a href="#">Головна</a> |
+			<a href="auth.html">Аккаунт</a> |
+			<a href="contact.html">Про компанію</a>
+		</p>
+		<p style="margin-top: 25px">© С. С. Кравченко, 2021</p>
+	</footer>
+	
+</body>
+</html>
