@@ -23,6 +23,8 @@ a, a:hover {
     color: #a09d87;
 }
 
+.logo {max-width: 50%}
+
 .main {
   flex: 1 0 auto;
 }
@@ -42,3 +44,11 @@ a, a:hover {
     color: #fff;
     text-decoration: none;
 }
+
+
+.text {
+	vertical-align:bottom;
+	display: flex;
+	align-items: flex-end;
+}
+
