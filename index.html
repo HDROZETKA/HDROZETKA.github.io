@@ -28,7 +28,7 @@
 
 				<div class="topnav-right">
 					<a onclick="document.getElementById('id01').style.display='block'">Увійти</a>
-					<a href="cart.html">Кошик</a>
+					<a onclick="document.getElementById('id02').style.display='block'">Кошик</a>
 				</div>
 				
 			</div>
@@ -135,12 +135,33 @@
 					</form>
 				</div>
 				
-				<script type="text/javascript" src="assets/js/auth.js"></script>
+			</div>
+				
+			<div class="cart">
+				<div id="id02" class="modal">
+					<form class="modal-content animate form_auth">
+						<div class="imgcontainer">
+						<h1 class="grey_text">Кошик</h2>
+						</div>
+
+						<div class="container">
+							<div class="product-item quantity-block">
+								<img src="assets/img/printers/2.png">
+								<h3 class="grey_text">3D-принтер ANYCUBIC i3 Mega S</h3>
+								<button class="quantity-arrow-minus"> - </button><input type="text" name="num" value="1"><button class="quantity-arrow-plus"> + </button>
+							</div>
+							<hr>
+							<button type="submit">Оформити замовлення</button>
+						</div>
+					</form>
+				</div>
+			
+				<script type="text/javascript" src="assets/js/modal.js"></script>
 				
 			</div>
-			
+				
 		</div>
-	
+			
 	</div>
 
 
