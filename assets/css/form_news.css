@@ -1,0 +1,58 @@
+.form_news {
+    color: #fff;
+}
+
+.container{
+    padding: 1.5rem;
+}
+
+input[type=text], input[type=password], button, .sub_news {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    outline: none;
+    border-radius: 6px;
+}
+input[type=text], input[type=password]{ border:3px solid #cecece; }
+input[type=text]:focus, input[type=password]:focus{
+    border: 3px solid #619DA1;
+}
+
+.sub_news, button{
+    background-color: #619DA1;
+    color: #ffffff;
+    font-weight: 900;
+    font-size:0.9rem;
+    text-transform: uppercase;
+    transition: all ease-in 200ms;
+    border: 3px solid transparent;
+}
+
+.sub_news:hover, button:hover {
+    background-color:transparent;
+    color:#619DA1;
+    border: 3px solid #619DA1;
+    cursor: pointer;
+}
+
+@media screen and (min-width:400px){
+  form{
+    width:80%;
+    margin:0 auto;
+  }
+}
+
+@media screen and (min-width:520px){
+  form{
+    width:60%;
+    margin:0 auto;
+  }
+}
+
+@media screen and (min-width:720px){
+  form{
+    width:50%;
+    margin:0 auto;
+  }
+}
