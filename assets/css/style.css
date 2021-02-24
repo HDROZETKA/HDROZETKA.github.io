@@ -21,6 +21,7 @@ a, a:hover {
     outline: none;
     text-decoration: underline;
     color: #a09d87;
+	cursor: pointer;
 }
 
 .logo {max-width: 50%}

@@ -1,4 +1,4 @@
-form{
+.form_news {
     color: #fff;
 }
 
@@ -6,7 +6,7 @@ form{
     padding: 1.5rem;
 }
 
-input[type=text], button[type=submit]{
+input[type=text], input[type=password], .sub_news {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
@@ -14,12 +14,12 @@ input[type=text], button[type=submit]{
     outline: none;
     border-radius: 6px;
 }
-input[type=text]{ border:3px solid #cecece; }
-input[type=text]:focus{
+input[type=text], input[type=password]{ border:3px solid #cecece; }
+input[type=text]:focus, input[type=password]:focus{
     border: 3px solid #619DA1;
 }
 
-button[type=submit]{
+.sub_news{
     background-color: #619DA1;
     color: #ffffff;
     font-weight: 900;
@@ -29,7 +29,7 @@ button[type=submit]{
     border: 3px solid transparent;
 }
 
-button:hover{
+.sub_news:hover{
     background-color:transparent;
     color:#619DA1;
     border: 3px solid #619DA1;
