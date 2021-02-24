@@ -11,6 +11,7 @@
    display: inline-block;
    margin: auto;
    margin-right: 30px;
+   margin-bottom: 30px;
 }
 .product-item:hover {
    border-bottom: 2px solid #619DA1;
@@ -65,6 +66,6 @@
 
 @media screen and (min-width: 950px) {
 	.block_2 {
-		max-width: 70%
+		max-width: 75%
 	}
 }

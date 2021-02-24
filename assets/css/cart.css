@@ -1,0 +1,10 @@
+.quantity-block button {
+	max-width: 3%;
+}
+
+.quantity-block input[type="text"] {
+	max-width: 25%;
+	font-size: 20px;
+	border: 0;
+	text-align: center;
+}
