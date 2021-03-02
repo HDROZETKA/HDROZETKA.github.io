@@ -30,13 +30,13 @@
    color: #444444;
    margin: 0 0 10px 0;
 }
-.price {
+.product-price {
    font-size: 16px;
    color: #619DA1;
    display: block;
    margin-bottom: 12px;
 }
-.button {
+.product-btn {
    text-decoration: none;
    display: inline-block;
    padding: 0 12px;
@@ -46,8 +46,10 @@
    font-size: 12px;
    line-height: 28px;
    transition: .3s ease-in;
+   border: 0;
+   max-width: 70%;
 }
-.product-item:hover .button {
+.product-item:hover .product-btn {
    background: #619DA1;
 }
 

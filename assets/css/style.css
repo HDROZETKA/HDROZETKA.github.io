@@ -24,6 +24,29 @@ a, a:hover {
 	cursor: pointer;
 }
 
+.standart_btn {
+    background-color: #619DA1;
+    color: #ffffff;
+    font-weight: 900;
+    font-size:0.9rem;
+    text-transform: uppercase;
+    transition: all ease-in 200ms;
+    border: 3px solid transparent;
+	border-radius: 6px;
+}
+
+.standart_btn:hover {
+    background-color:transparent;
+    color:#619DA1;
+    border: 3px solid #619DA1;
+    cursor: pointer;
+}
+
+.btn:disabled {
+	opacity: 0.4;
+	pointer-events: none;
+}
+
 .logo {max-width: 50%}
 
 .main {
