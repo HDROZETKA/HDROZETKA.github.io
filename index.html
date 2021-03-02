@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Головна сторінка</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/slideshow.css">
+	<link rel="stylesheet" href="assets/css/topnav.css">
+	<link rel="stylesheet" href="assets/css/printers.css">
+	<link rel="stylesheet" href="assets/css/form_news.css">
+	<link rel="stylesheet" href="assets/css/auth.css">
+	<link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="header" style="border-bottom: 1px solid #686868;">
+			
+			<div class="topnav">
+
+			    <div class="topnav-centered">
+					<a href="index.html"><img src="assets/img/logo.png"></a>
+				</div>
+
+				<a href="printers.html">3D ПРИНТЕРИ</a>
+				<a href="acces.html">АКСЕСУАРИ</a>
+
+				<div class="topnav-right">
+					<a onclick="document.getElementById('id01').style.display='block'">Увійти</a>
+					<a class="cart" onclick="document.getElementById('id02').style.display='block'">
+						Перейти в корзину
+						<strong><span class="order-quantity">0</span></strong>
+					</a>
+				</div>
+				
+			</div>
+
+		</div>
+
+		<div class="site_content">
+		
+			<div class="slideshow">
+
+				<div class="slideshow-container">
+
+				  <div class="mySlides fade">
+					<img src="assets/img/slideshow-main/img1.jpg" style="width:100%">
+				  </div>
+
+				  <div class="mySlides fade">
+					<img src="assets/img/slideshow-main/img2.jpg" style="width:100%">
+				  </div>
+
+				  <div class="mySlides fade">
+					<img src="assets/img/slideshow-main/img3.jpg" style="width:100%">
+				  </div>
+
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+				
+				<script src="assets/js/slideshow.js"></script>
+				
+			</div>
+			
+			<div class="block_1" style="background-color:#619DA1; max-width: 50%; margin-left: auto; margin-right: auto; margin-bottom: 3%;">
+			
+				<h2 style="text-align: center; padding-top: 10px;">Суперціни!</h2>
+				<br>
+				<h5 style="text-align: center; padding-bottom: 10px;">Знижка до 80% на всі товари!</h5>
+
+			</div>
+			
+			<h2 class="grey_text" style="text-align: center; margin-bottom: 30px;">РЕКОМЕНДОВАНІ ТОВАРИ</h2>
+			
+			<div class="block_2">
+				<div class="product-item">
+					<div class="product">
+						<a class="product-image" href="#"><img src="assets/img/printers/1.png"></a>
+						<h3 class="product-title">
+							<a href="#">3D-принтер ZENIT 3D HT</a>
+						</h3>
+						<span class="product-price">35500 ₽</span>
+						<button class="product-btn button btn">Купити</button>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="product">
+						<a class="product-image" href="#"><img src="assets/img/printers/2.png"></a>
+						<h3 class="product-title">
+							<a href="#">3D-принтер ANYCUBIC i3 Mega S</a>
+						</h3>
+						<span class="product-price">6999 ₽</span>
+						<button class="product-btn button btn">Купити</button>
+					</div>
+				</div>
+
+			</div>
+			
+			<h2 class="grey_text" style="text-align: center; margin-top: 75px;">ПРИЄДНУЙСЯ</h2>
+			<h4 class="grey_text" style="text-align: center; margin: 20px auto 25px auto;">З нами будеш знати про всі 3D-новинки</h4>
+			
+			<form class="form_news" action="#">
+				<div class="container">
+					<input name="fname" type="text" placeholder="Ім'я" required>
+					<input name="email" type="text" placeholder="Email" required>
+					<button class="standart_btn sub_news" type="submit">Підписатися</button>
+				</div>
+			</form> 
+			
+			<div class="auth">
+				<div id="id01" class="modal">
+					<form class="modal-content animate form_auth">
+					
+						<h1 class="grey_text" style="text-align: center; margin: 24px 0 12px 0;">Авторизація</h2>
+
+						<div class="container">
+							<label class="grey_text" for="uname"><b>Ім'я користувача</b></label>
+							<input type="text" placeholder="Enter Username" name="uname" required>
+
+							<label class="grey_text" for="psw"><b>Пароль</b></label>
+							<input type="password" placeholder="Enter Password" name="psw" required>
+
+							<button class="standart_btn" type="submit">Увійти</button>
+							<label class="grey_text">
+								<input type="checkbox" checked="checked" name="remember"> Запам'ятайте мене
+							</label>
+						</div>
+
+						<div class="container" style="background-color:#f1f1f1">
+							<button class="standart_btn cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Назад</button>
+							<span class="psw"><a href="#">Забули пароль?</a></span>
+						</div>
+					</form>
+				</div>
+				
+				
+			
+			</div>		
+
+			<div class="cart">
+				<div id="id02" class="modal">
+					<div class="modal-content animate"> <!-- style manager -->
+				
+						<h1 class="grey_text" style="text-align: center; margin: 24px 0 12px 0;">Оформлення замовлення</h2>
+						
+						<div class="order-info grey_text container" style="border: 3px solid rgba(0,0,0,0.11); border-radius: 10px; margin: 16px;">
+							<div class="container">
+								Товарів у замовленні:
+								<strong><span class="order-quantity-modal">0 шт</span></strong><br>
+							</div>
+							<div class="container">
+								Сума замовлення:
+								<strong><span class="fullprice">0 грн</span></strong>
+							</div>
+							<button class="order-modal-btn">Состав заказа</button>
+							<div class="container order-list">
+								<ul class="order-list"></ul>
+							</div>
+							
+						</div>
+					
+					</div>
+				</div>
+				
+			</div>
+			
+			<script src="assets/js/modal.js"></script>	
+			<script src="assets/js/cart.js"></script>	
+			
+	</div>
+
+	<footer class="footer">
+		<img src="assets/img/logo.png">
+		<p>
+			<a href="printers.html">3D Принтери</a> |
+			<a href="acces.html">Аксесуари</a> | 
+			<a href="index.html">Головна</a> |
+			<a onclick="document.getElementById('id01').style.display='block'">Аккаунт</a> |
+			<a href="#">Про компанію</a>
+		</p>
+		<p style="margin-top: 25px">© С. С. Кравченко, 2021</p>
+	</footer>
+	
+</body>
+</html>
