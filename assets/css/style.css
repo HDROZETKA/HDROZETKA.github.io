@@ -24,6 +24,18 @@ a, a:hover {
 	cursor: pointer;
 }
 
+li {
+	list-style-type: none;
+}
+
+button {
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	cursor: pointer;
+	width: 100%;
+}
+
 .standart_btn {
 	background-color: #619DA1;
 	color: #ffffff;
