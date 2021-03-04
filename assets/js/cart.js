@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	const printQuantity = () => {
 		let productsListLength = orderProductsList.children.length;
-		orderQuantity.textContent = productsListLength - 1 ;
-		orderQuantityModal.textContent = `${productsListLength - 1} шт`;
+		orderQuantity.textContent = productsListLength;
+		orderQuantityModal.textContent = `${productsListLength} шт`;
 	};
 
 	const printFullPrice = () => {
