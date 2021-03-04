@@ -1,45 +1,45 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html, body {
-  height: 100%;
+	height: 100%;
 }
 
 body {
-  font-size: 1.2em;
-  background-color: #fff;
-  color: #EEE;
-  display: flex;
-  flex-direction: column;
+	font-size: 1.2em;
+	background-color: #fff;
+	color: #EEE;
+	display: flex;
+	flex-direction: column;
 }
 
 input, button {outline:none;}
 
 a, a:hover {
-    outline: none;
-    text-decoration: underline;
-    color: #a09d87;
+	outline: none;
+	text-decoration: underline;
+	color: #a09d87;
 	cursor: pointer;
 }
 
 .standart_btn {
-    background-color: #619DA1;
-    color: #ffffff;
-    font-weight: 900;
-    font-size:0.9rem;
-    text-transform: uppercase;
-    transition: all ease-in 200ms;
-    border: 3px solid transparent;
+	background-color: #619DA1;
+	color: #ffffff;
+	font-weight: 900;
+	font-size:0.9rem;
+	text-transform: uppercase;
+	transition: all ease-in 200ms;
+	border: 3px solid transparent;
 	border-radius: 6px;
 }
 
 .standart_btn:hover {
-    background-color:transparent;
-    color:#619DA1;
-    border: 3px solid #619DA1;
-    cursor: pointer;
+	background-color:transparent;
+	color:#619DA1;
+	border: 3px solid #619DA1;
+	cursor: pointer;
 }
 
 .btn:disabled {
@@ -50,23 +50,23 @@ a, a:hover {
 .logo {max-width: 50%}
 
 .main {
-  flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 .grey_text {color: #555}
 
 .footer {
-    padding: 28px 0 5px 0;
-    text-align: center;
-    background-color: #5d5d5d;
-    color: #a8aa94;
+	padding: 28px 0 5px 0;
+	text-align: center;
+	background-color: #5d5d5d;
+	color: #a8aa94;
 	flex-shrink: 0;
 	margin-top: 3%;
 }
 
 .footer a:hover {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 

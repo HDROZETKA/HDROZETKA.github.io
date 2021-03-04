@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const orderProductsList = document.querySelector('.order-list');
 	const orderModalOpenProd = document.querySelector('.order-modal-btn');
 	let price = 0;
-	let randomId = 0;
+	let ids = [0,1,2,3,4,5,6,7,8,9,9];
 	let productArray = [];
 	
 	const priceWithoutSpaces = (str) => {
@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 	
 	const minusFullPrice = (currentPrice) => {
-		return price -= currentPrice/2;
+		return price -= currentPrice / 2;
 	};
 	
 	const printQuantity = () => {
 		let productsListLength = orderProductsList.children.length;
-		orderQuantity.textContent = productsListLength -1 ;
+		orderQuantity.textContent = productsListLength - 1 ;
 		orderQuantityModal.textContent = `${productsListLength - 1} шт`;
 	};
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	const deleteProducts = (productParent) => {
 		let id = productParent.querySelector('.order-product').dataset.id;
-		document.querySelector(`.product[data-id="${id}"]`).querySelector('.product-btn').disabled = false;
+		if (document.querySelector('.product[data-id="${id}"]' != null)) {document.querySelector('.product[data-id="${id}"]').querySelector('.product-btn').disabled = false};
 		
 		let currentPrice = parseInt(priceWithoutSpaces(productParent.querySelector('.order-product-price').textContent));
 		minusFullPrice(currentPrice);
@@ -86,9 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 	
 	productsBtn.forEach(el => {
-		
-		el.closest('.product').setAttribute('data-id', randomId++);
-
 		el.addEventListener('click', (e) => {
 			let self = e.currentTarget;
 			let parent = self.closest('.product');
@@ -124,24 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	};
 	
-	const initialState = () => {
-		if (localStorage.getItem('products') !== null) {
-			orderProductsList.innerHTML = localStorage.getItem('products');
-			printQuantity();
-			countSumm();
-			printFullPrice();
-
-
-			document.querySelectorAll('.order-product').forEach(el => {
-				let id = el.dataset.id;
-				console.log(id)
-				document.querySelector(`.product[data-id="${id}"]`).querySelector('.product-btn').disabled = true;
-			});
-		}
-	};
-
-	initialState();
-	
 	const updateStorage = () => {
 		let parent = orderProductsList;
 		let html = parent.innerHTML;
@@ -153,5 +132,24 @@ document.addEventListener('DOMContentLoaded', () => {
 			localStorage.removeItem('products');
 		}
 	};
+	
+	const initialState = () => {
+		if (localStorage.getItem('products') != null) {
+			orderProductsList.innerHTML = localStorage.getItem('products');
+			document.querySelectorAll('.order-product').forEach(el => {
+				var id_1 = el.dataset.id;
+				if (document.querySelector(`.product[data-id="${id_1}"]`) == null) {var id_2 = null} else {var id_2 = document.querySelector(`.product[data-id="${id_1}"]`).dataset.id};
+				if (id_2 != null) {
+					document.querySelector(`.product[data-id="${id_1}"]`).querySelector('.product-btn').disabled = true;
+				};
+			});
+			printQuantity();
+			countSumm();
+			printFullPrice();
+			updateStorage();
+		}
+	};
+
+	initialState();
 	
 });
