@@ -55,9 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			<li class="order-product-item">
 				<article class="order-product" data-id="${id}">
 					<img src="${img}" alt="" class="order-product-img">
-					<h3 class="order-product-title">${title}</h3>
-					<span class="order-product-price">${normalPrice(price)}</span>
-					<button class="order-product-delete" aria-label="Удалить товар"></button>
+					<div class="order-product-text" style="margin-right: 10px;">
+						<h3 class="order-product-title">${title}</h3>
+						<span class="order-product-price">${normalPrice(price)}</span>
+						<button class="order-product-delete">Видалити товар</button>
+						<hr>
+					</div>
 				</article>
 			</li>
 		`;
